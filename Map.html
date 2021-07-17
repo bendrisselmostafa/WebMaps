@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_df36954b59db45249d838e608e514946 {
+                #map_0256b9fe4567496d9e3eeacfba014096 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_df36954b59db45249d838e608e514946" ></div>
+            <div class="folium-map" id="map_0256b9fe4567496d9e3eeacfba014096" ></div>
         
 </body>
 <script>    
     
-            var map_df36954b59db45249d838e608e514946 = L.map(
-                "map_df36954b59db45249d838e608e514946",
+            var map_0256b9fe4567496d9e3eeacfba014096 = L.map(
+                "map_0256b9fe4567496d9e3eeacfba014096",
                 {
                     center: [33.57, -7.59],
                     crs: L.CRS.EPSG3857,
@@ -55,32 +55,37 @@
 
         
     
-            var tile_layer_3a22ddd8c9d34155a99029a706b124bb = L.tileLayer(
+            var tile_layer_dcbd98158e6243ea996610bb7d614879 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_df36954b59db45249d838e608e514946);
+            ).addTo(map_0256b9fe4567496d9e3eeacfba014096);
         
     
-            var marker_a8a3b07911734f1580817e9b86d5fcca = L.marker(
+            var feature_group_a2372d8199864270916be5c3718a32b6 = L.featureGroup(
+                {}
+            ).addTo(map_0256b9fe4567496d9e3eeacfba014096);
+        
+    
+            var marker_99482803d2b042a48a5a8acf8a6eefc6 = L.marker(
                 [33.60881457164729, -7.632757310367674],
                 {}
-            ).addTo(map_df36954b59db45249d838e608e514946);
+            ).addTo(feature_group_a2372d8199864270916be5c3718a32b6);
         
     
-            var icon_a98650dee7704239944633997f093fab = L.AwesomeMarkers.icon(
+            var icon_3ab8a8a866ac41a588048c9404c3bbd1 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_a8a3b07911734f1580817e9b86d5fcca.setIcon(icon_a98650dee7704239944633997f093fab);
+            marker_99482803d2b042a48a5a8acf8a6eefc6.setIcon(icon_3ab8a8a866ac41a588048c9404c3bbd1);
         
     
-        var popup_39ef092462d245968db2981a83278c6b = L.popup({"maxWidth": "100%"});
+        var popup_f17714f60bd445f1bc936cf3cb068e81 = L.popup({"maxWidth": "100%"});
 
         
-            var html_e8ef7d28b77e4c1e85fbfdf88b03d224 = $(`<div id="html_e8ef7d28b77e4c1e85fbfdf88b03d224" style="width: 100.0%; height: 100.0%;">Here Is Hassan II Mosque</div>`)[0];
-            popup_39ef092462d245968db2981a83278c6b.setContent(html_e8ef7d28b77e4c1e85fbfdf88b03d224);
+            var html_3dc7c302098c4ba8abfa1c21542aadca = $(`<div id="html_3dc7c302098c4ba8abfa1c21542aadca" style="width: 100.0%; height: 100.0%;">Here Is Hassan II Mosque</div>`)[0];
+            popup_f17714f60bd445f1bc936cf3cb068e81.setContent(html_3dc7c302098c4ba8abfa1c21542aadca);
         
 
-        marker_a8a3b07911734f1580817e9b86d5fcca.bindPopup(popup_39ef092462d245968db2981a83278c6b)
+        marker_99482803d2b042a48a5a8acf8a6eefc6.bindPopup(popup_f17714f60bd445f1bc936cf3cb068e81)
         ;
 
         

@@ -6,12 +6,16 @@ map = folium.Map(
     tiles="Stamen Terrain",
 )
 
-map.add_child(
+fg = folium.FeatureGroup(name="My map")
+
+fg.add_child(
     folium.Marker(
         location=[33.60881457164729, -7.632757310367674],
         popup="Here Is Hassan II Mosque",
         icon=folium.Icon(color="green"),
     )
 )
+
+map.add_child(fg)
 
 map.save("Map.html")
